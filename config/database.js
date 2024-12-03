@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const db = mysql.createConnection({
+  // use dotenv to hide the information
   host: process.env.HOST,
   user: process.env.USER,
   password: process.env.PASSWORD,
